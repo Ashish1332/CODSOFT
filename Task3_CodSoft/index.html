@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body {
+            background-color: #282c34;
+            color: white;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .calculator {
+            background-color: #1e1e1e;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            width: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #61dafb;
+        }
+
+        input {
+            font-size: 20px;
+            background-color: #2d2d2d;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            padding: 10px;
+            width: 100%;
+            margin-bottom: 10px;
+            box-sizing: border-box;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        button {
+            font-size: 20px;
+            background-color: #61dafb;
+            color: white;
+            width: 100%;
+            padding: 15px;
+            margin: 5px 0;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #4fa3d1;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="calculator">
+        <h1>Calculator</h1>
+        <input type="text" placeholder="Enter any number" id="input">
+        <table>
+            <tr>
+                <td><button>(</button></td>
+                <td><button>)</button></td>
+                <td><button>C</button></td>
+                <td><button>%</button></td>
+            </tr>
+            <tr>
+                <td><button>9</button></td>
+                <td><button>8</button></td>
+                <td><button>7</button></td>
+                <td><button>+</button></td>
+            </tr>
+            <tr>
+                <td><button>6</button></td>
+                <td><button>5</button></td>
+                <td><button>4</button></td>
+                <td><button>-</button></td>
+            </tr>
+            <tr>
+                <td><button>3</button></td>
+                <td><button>2</button></td>
+                <td><button>1</button></td>
+                <td><button>/</button></td>
+            </tr>
+            <tr>
+                <td><button>0</button></td>
+                <td><button>.</button></td>
+                <td><button>=</button></td>
+                <td><button>*</button></td>
+            </tr>
+        </table>
+    </div>
+
+    <script>
+        let input = document.getElementById("input");
+        let buttons = document.querySelectorAll("button");
+
+        buttons.forEach(button => {
+            button.addEventListener('click', () => {
+                if (button.innerHTML == "=") {
+                    input.value = eval(input.value);
+                    return;
+                }
+                if (button.innerHTML == "C") {
+                    input.value = '';
+                    return;
+                }
+
+                input.value += button.innerHTML;
+            });
+        });
+    </script>
+</body>
+
+</html>

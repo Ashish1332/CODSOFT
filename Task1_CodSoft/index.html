@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/nouislider.min.css" />
+    <link rel="stylesheet" href="css/all.css">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Booklish</title>
+</head>
+
+<body>
+    <!-- NAVBAR -->
+    <nav class="d-block navbar navbar navbar-expand navbar-ligh ">
+        <div class="row m-auto justify-content-center">
+            <!-- LOGO -->
+            <div class="col-6 col-lg-2 m-lg-auto">
+                <div class="header-logo">
+                    <a href="./index.html" class="logo">
+                        <img class="img-fluid" src="./img/logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+            <!-- /LOGO -->
+            <!-- SEARCH -->
+            <div class="col-lg-7 m-lg-auto mt-3">
+                <div class="header-search">
+                    <form class="row justify-content-center">
+                        <select class=" col-6 col-md-4 input-select">
+                            <option value="0">All Categories</option>
+                            <option value="1">DSA</option>
+                            <option value="2">Web Technology</option>
+                            <option value="3">DCN</option>
+                        </select>
+                        <input class="input col-6 col-md-5" placeholder="Book Name">
+                        <button class=" col-12 search-btn col-md-3 mt-1 mt-md-0">Search</button>
+                    </form>
+                </div>
+            </div>
+            <!-- /SEARCH -->
+            <!-- NAVS -->
+            <ul class="navbar-nav col-lg-3  mt-3 justify-content-center text-center">
+                <li class="nav-item">
+                   
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./register.html">
+                        <i class="d-block text-center fas fa-user "></i>
+                        <span>Registration</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./login.html">
+                        <i class="d-block text-center fas fa-sign-in-alt"></i>
+                        <span>Log in</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <i class="d-block text-center fas fa-sign-out-alt "></i>
+                        <span>Log Out</span>
+                    </a>
+                </li>
+                
+            </ul>
+            <!-- /NAVS-->
+        </div>
+    </nav>
+    <!-- /NAVBAR -->
+    <!-- STORE SECTION -->
+    <div class="section store-section">
+        <!-- container -->
+        <div class="container">
+            <!-- row -->
+            <div class="row">
+                <!-- ASIDE -->
+                <div class=" col-12 col-lg-3">
+                    <!-- aside Widget -->
+                    <form action="" method="" role="">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header p-0 collapsed" id="headingOne" type="button"
+                                    data-toggle="collapse" data-target="#collapseOne" aria-expanded="true"
+                                    aria-controls="collapseOne">
+                                    <h2 class="mb-0">Categories</h2>
+                                </div>
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body bg-light">
+                                        <div class="form-check mb-2">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="radio" name="filters" value="0">
+                                                Architecture
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="radio" name="filters" value="1">
+                                                Art
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="radio" name="filters" value="2">
+                                                Biography and Autobiography
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="radio" name="filters" value="3">
+                                                Body, Mind and Spirit
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="radio" name="filters" value="4">
+                                                Business and Economics
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="radio" name="filters" value="5">
+                                                Children Fiction
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="radio" name="filters" value="6">
+                                                Children Nonfiction
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="radio" name="filters" value="7">
+                                                Comics and Graphic Novels
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="radio" name="filters" value="8">
+                                                Computers and Internet
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="radio" name="filters" value="9">
+                                                Cooking and Food
+                                            </label>
+                                        </div>
+                                        <div class="form-check mb-2">
+                                            <label class="form-check-label">
+                                                <input class="form-check-input" type="radio" name="filters" value="10">
+                                                Crafts and Hobbies
+                                            </label>
+                                        </div>
+                                        <button type="submit" name="btnApply" class="btn btn-light btn-sm mt-2 "><i
+                                                class="fa fa-filter"></i>
+                                            Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <form action="" class="mt-2" method="" role="">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card ">
+                                <div class="card-header p-0" id="headingTwo" type="button" data-toggle="collapse"
+                                    data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                    <h2 class="mb-0">
+                                        Price
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body bg-light">
+                                        <div class="price-filter">
+                                            <div id="price-slider" class="noUi-target noUi-ltr noUi-horizontal">
+                                            </div>
+                                            <span class="d-block text-center">From</span>
+                                            <div class="input-number price-min">
+                                                <input id="price-min" type="number">
+                                                <span class="qty-up">+</span>
+                                                <span class="qty-down">-</span>
+                                            </div>
+                                            <span class="d-block text-center">To</span>
+                                            <div class="input-number price-max">
+                                                <input id="price-max" type="number">
+                                                <span class="qty-up">+</span>
+                                                <span class="qty-down">-</span>
+                                            </div>
+                                        </div>
+                                        <button type="submit" name="btnApply" class="btn btn-light btn-sm mt-2"><i
+                                                class="fa fa-filter"></i>
+                                            Apply</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- /aside Widget -->
+                </div>
+                <!-- /ASIDE -->
+                <!-- STORE -->
+                <div id="store" class="mt-2 mt-lg-0 col-12 col-lg-9">
+                    <!-- store top filter -->
+                    <div class="store-filter">
+                        <div class="store-sort">
+                            <label>
+                                Sort By:
+                                <select class="input-select">
+                                    <option value="T0">Title A-Z</option>
+                                    <option value="T1">Title Z-A</option>
+                                    <option value="A0">Author A-Z</option>
+                                    <option value="A1">Author Z-A</option>
+                                    <option value="P0">Price Asc</option>
+                                    <option value="P1">Price Desc</option>
+                                    <option value="N0">nearby</option>
+                                </select>
+                            </label>
+                        </div>
+                    </div>
+                    <!-- /store top filter -->
+                    <!-- store products -->
+                    <div class="row">
+                        <!-- product -->
+                        <div class="col-6 col-lg-4">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img class="img-fluid" src="./img/product01.png" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <h3 class="product-name"><a href="./book_profile.html">Computer Engineering</a></h3>
+                                    <h4 class="product-price">800 Ru.</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /product -->
+                        <!-- product -->
+                        <div class="col-6 col-lg-4">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img class="img-fluid" src="./img/product02.png" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <h3 class="product-name"><a href="./book_profile.html">C++</a></h3>
+                                    <h4 class="product-price">500 Ru.</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /product -->
+                        <!-- product -->
+                        <div class="col-6 col-lg-4">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img class="img-fluid" src="./img/product03.png" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <h3 class="product-name"><a href="./book_profile.html">Cloud Computing</a></h3>
+                                    <h4 class="product-price">700 Ru.</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /product -->
+                        <!-- product -->
+                        <div class="col-6 col-lg-4">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img class="img-fluid" src="./img/product04.png" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <h3 class="product-name"><a href="#">Computer Architecture
+                                    </a></h3>
+                                    <h4 class="product-price">850 Ru.</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /product -->
+                        <!-- product -->
+                        <div class="col-6 col-lg-4">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img class="img-fluid" src="./img/product05.png" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <h3 class="product-name"><a href="#">Digital Forensics</a></h3>
+                                    <h4 class="product-price">900 Ru.</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /product -->
+                        <!-- product -->
+                        <div class="col-6 col-lg-4">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img class="img-fluid" src="./img/product06.png" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <h3 class="product-name"><a href="#">Advance Java </a></h3>
+                                    <h4 class="product-price">450 Ru.</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /product -->
+                        <!-- product -->
+                        <div class="col-6 col-lg-4">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img class="img-fluid" src="./img/product07.png" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <h3 class="product-name"><a href="#">Python</a></h3>
+                                    <h4 class="product-price">680 Ru.</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /product -->
+                        <!-- product -->
+                        <div class="col-6 col-lg-4">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img class="img-fluid" src="./img/product08.png" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <h3 class="product-name"><a href="#">Machine Learning</a></h3>
+                                    <h4 class="product-price">780 Ru.</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /product -->
+                        <!-- product -->
+                        <div class="col-6 col-lg-4">
+                            <div class="product">
+                                <div class="product-img">
+                                    <img class="img-fluid" src="./img/product09.png" alt="">
+                                </div>
+                                <div class="product-body">
+                                    <h3 class="product-name"><a href="#">DSA</a></h3>
+                                    <h4 class="product-price">790 Ru.</h4>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /product -->
+                    </div>
+                   
+            </div>
+            <!-- /row -->
+        </div>
+        <!-- /container -->
+    </div>
+    <!-- /STORE SECTION -->
+    <!-- FOOTER -->
+    <footer id="footer">
+        <!-- top footer -->
+        <div class="section">
+            <!-- container -->
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <div class="col-lg-3 col-12 col-sm-6">
+                        <div class="footer">
+                            <h3 class="footer-title">Contact Us</h3>
+                            <ul class="footer-links">
+                                <li><a href="#"><i class="fa fa-map-marker"></i>Ashish Bhangale</a></li>
+                                <li><a href="#"><i class="fa fa-phone"></i>+91-8087990543</a></li>
+                                <li><a href="#"><i class="fa fa-envelope"></i>imashish1332@gmail.com</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 col-sm-6">
+                        <div class="footer">
+                            <h3 class="footer-title">Categories</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">Architecture</a></li>
+                                <li><a href="#">Computers and Internet</a></li>
+                                <li><a href="#">Mathematics</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 col-sm-6">
+                        <div class="footer">
+                            <h3 class="footer-title">Information</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">About Us</a></li>
+                                <li><a href="#">Privacy Policy</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-12 col-sm-6">
+                        <div class="footer">
+                            <h3 class="footer-title">Service</h3>
+                            <ul class="footer-links">
+                                <li><a href="#">My Account</a></li>
+                                <li><a href="#">Registration</a></li>
+                                <li><a href="#">Help</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /top footer -->
+        <!-- bottom footer -->
+        <div id="bottom-footer" class="section">
+            <div class="container">
+                <!-- row -->
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <span class="copyright">
+                            <h6>Created By Ashish Bhangale</h6>
+                            Copyright ©
+                            <script>document.write(new Date().getFullYear());</script> All rights reserved
+                        </span>
+                    </div>
+                </div>
+                <!-- /row -->
+            </div>
+            <!-- /container -->
+        </div>
+        <!-- /bottom footer -->
+    </footer>
+    <!-- /FOOTER -->
+
+
+</body>
+
+</html>
